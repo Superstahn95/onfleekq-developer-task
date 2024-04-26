@@ -1,5 +1,6 @@
+import DeskTopBar from "../deskTopBar/DeskTopBar";
 function Topbar() {
-  return <div>Topbar</div>;
+  return <DeskTopBar />;
 }
 
 export default Topbar;

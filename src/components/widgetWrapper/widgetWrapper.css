@@ -1,0 +1,9 @@
+.widget {
+  padding: 10px;
+  box-shadow: 5px 10px #f5f5fc;
+}
+.widget--shaded {
+  padding: 10px;
+  box-shadow: 5px 10px #f5f5fc;
+  background-color: #f5f5fc;
+}

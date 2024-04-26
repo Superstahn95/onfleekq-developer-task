@@ -1,0 +1,7 @@
+.container {
+  background-color: #ffffff;
+  height: 100vh;
+  flex: 1;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}

@@ -1,7 +1,39 @@
+.sidebar {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  color: #ffffff;
+  font-weight: bold;
+}
 .navlinks--container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  flex: 1;
+}
+.navlinks {
+  /* background-color: #ffffff; */
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8880cf;
+}
+.navlinks-active {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(40px);
+  transition: all 0.5s ease-in-out;
+  color: #ff392b;
+  box-shadow: 5px 0px #f5f5fc;
 }

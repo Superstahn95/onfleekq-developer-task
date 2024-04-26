@@ -1,13 +1,23 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home/Home";
+import Stat from "./pages/stat/Stat";
 import Sidebar from "./components/sidebar/Sidebar";
+import ScreenProvider from "./context/screenMode";
 
 function App() {
   return (
-    <main className="main">
-      <Sidebar />
-      <Home />
-    </main>
+    <ScreenProvider>
+      <BrowserRouter>
+        <main className="main">
+          <Sidebar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/stat" element={<Stat />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
+    </ScreenProvider>
   );
 }
 

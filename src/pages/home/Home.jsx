@@ -1,6 +1,13 @@
 import "./home.css";
+import Topbar from "../../components/topbar/Topbar";
+import AnalyticsView from "../../components/analytics/AnalyticsView";
 function Home() {
-  return <div className="container">Home</div>;
+  return (
+    <div className="container">
+      <Topbar />
+      <AnalyticsView />
+    </div>
+  );
 }
 
 export default Home;

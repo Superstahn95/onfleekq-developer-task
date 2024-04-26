@@ -1,0 +1,36 @@
+.topbar {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.topbar--search {
+  flex: 1;
+  position: relative;
+}
+.topbar--searchicon--container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.topbar--textfield {
+  width: 100%;
+  background-color: #f5f5fc;
+  padding: 10px 30px;
+  outline: none;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+}
+.topbar--nav--container {
+  flex: 1;
+}
+.topbar--nav {
+  display: flex;
+  list-style-type: none;
+}
+.topbar--links {
+  margin-left: 25px;
+  color: #000013;
+}
