@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Stat from "./pages/stat/Stat";
 import Sidebar from "./components/sidebar/Sidebar";
 import ScreenProvider from "./context/screenMode";
+import "react-circular-progressbar/dist/styles.css";
 
 function App() {
   return (

@@ -1,0 +1,13 @@
+.progress--content {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #3326ae;
+  font-weight: bolder;
+  font-size: 20px;
+  box-shadow: 0 0 0 2px#f5f5fc;
+}
