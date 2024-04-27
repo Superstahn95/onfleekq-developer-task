@@ -1,0 +1,8 @@
+.chart--header {
+  display: flex;
+  justify-content: space-between;
+}
+.chart--header--text {
+  color: #000013;
+  font-weight: bold;
+}

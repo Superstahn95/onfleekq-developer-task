@@ -1,0 +1,30 @@
+.transaction--card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.transaction--button {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.transaction--text--container {
+  flex: 1;
+  margin-left: 20px;
+}
+.transaction--text {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #000013;
+}
+.transaction--subtext {
+  color: #a49edb;
+  font-size: 12px;
+}
+.transaction--amount {
+  color: #000013;
+  font-size: 12px;
+}

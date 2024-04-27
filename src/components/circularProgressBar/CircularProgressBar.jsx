@@ -21,7 +21,6 @@ function CircularProgressBar() {
       >
         <div className="progress--content">38%</div>
       </CircularProgressbarWithChildren>
-      ;
     </div>
   );
 }

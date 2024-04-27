@@ -1,0 +1,18 @@
+.transaction {
+  width: 100%;
+}
+.transaction--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transaction--header--text {
+  font-size: 16px;
+  font-weight: bold;
+}
+.transaction--header--button {
+  background-color: #ff392b;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
