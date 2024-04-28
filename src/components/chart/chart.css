@@ -6,3 +6,37 @@
   color: #000013;
   font-weight: bold;
 }
+.chart--selection {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+  width: 80px;
+  border-radius: 10px;
+  gap: 5px;
+  cursor: pointer;
+}
+.chart--selection--text {
+  font-size: 15px;
+  color: #3326ae;
+}
+.selection {
+  margin-bottom: 7px;
+}
+.selection--icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selection--dropdown {
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  width: 100px;
+  top: 100%;
+  /* right: 0; */
+  left: 80%;
+  font-size: 14px;
+  z-index: 99;
+}

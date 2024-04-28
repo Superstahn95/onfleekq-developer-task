@@ -56,7 +56,20 @@
   top: 0;
   right: 0;
 }
+.avatar--container {
+  cursor: pointer;
+  position: relative;
+}
 .profile-avatar {
   width: 30px;
   height: 30px;
+}
+.profile--dropdown {
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 100px;
+  background-color: #f5f5fc;
+  padding: 10px;
+  border-radius: 10px;
 }

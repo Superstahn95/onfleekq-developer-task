@@ -3,7 +3,9 @@ import { IoMdNotifications } from "react-icons/io";
 import "./deskTopBar.css";
 import { colors } from "../../utils/colors";
 import profileAvatar from "../../assets/profile-avatar.png";
+import { useState } from "react";
 function DeskTopBar() {
+  const [showDropDown, setShowDropDown] = useState(false);
   return (
     <div className="topbar">
       <div className="topbar--search">
@@ -30,7 +32,18 @@ function DeskTopBar() {
           <div className="red--dot"></div>
         </div>
         <div className="avatar--container">
-          <img src={profileAvatar} alt="avatar" className="profile-avatar" />
+          <img
+            src={profileAvatar}
+            alt="avatar"
+            className="profile-avatar"
+            onClick={() => setShowDropDown((prev) => !prev)}
+          />
+          {showDropDown && (
+            <div className="profile--dropdown">
+              <p> Profile</p>
+              <p>Logout</p>
+            </div>
+          )}
         </div>
       </div>
     </div>

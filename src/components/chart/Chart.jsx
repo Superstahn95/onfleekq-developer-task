@@ -1,10 +1,13 @@
+import { useState } from "react";
+import { FaAngleDown } from "react-icons/fa6";
 import "./chart.css";
 import WidgetWrapper from "../widgetWrapper/WidgetWrapper";
 // import ApexCharts from 'apexcharts'
 import Chart from "react-apexcharts";
 import { colors } from "../../utils/colors";
 function ChartComponent() {
-  // open high low close
+  const [range, setRange] = useState("Year");
+  const [showDropDown, setShowDropDown] = useState(false);
   const series = [
     {
       data: [
@@ -75,6 +78,25 @@ function ChartComponent() {
     <WidgetWrapper isShaded={true}>
       <div className="chart--header">
         <p className="chart--header--text">Statistics</p>
+        <div
+          className="chart--selection"
+          onClick={() => setShowDropDown((prev) => !prev)}
+        >
+          <span className="chart--selection--text">{range}</span>
+          <div className="selection--icon-wrapper">
+            <FaAngleDown size={15} />
+          </div>
+          {showDropDown && (
+            <div className="selection--dropdown">
+              <div className="selection" onClick={() => setRange("Month")}>
+                Month
+              </div>
+              <div className="selection" onClick={() => setRange("Year")}>
+                Year
+              </div>
+            </div>
+          )}
+        </div>
       </div>
       <Chart
         options={options}

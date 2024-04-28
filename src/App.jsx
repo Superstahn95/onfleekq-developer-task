@@ -5,6 +5,8 @@ import Stat from "./pages/stat/Stat";
 import Sidebar from "./components/sidebar/Sidebar";
 import ScreenProvider from "./context/screenMode";
 import "react-circular-progressbar/dist/styles.css";
+import Message from "./pages/message/Message";
+import Wallet from "./pages/wallet/Wallet";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/stat" element={<Stat />} />
+            <Route path="/messages" element={<Message />} />
+            <Route path="/wallet" element={<Wallet />} />
           </Routes>
         </main>
       </BrowserRouter>

@@ -1,7 +1,7 @@
 import "../home/home.css";
 import Topbar from "../../components/topbar/Topbar";
 import AnalyticsView from "../../components/analytics/AnalyticsView";
-function Stat() {
+function Message() {
   return (
     <div className="container">
       <Topbar />
@@ -10,4 +10,4 @@ function Stat() {
   );
 }
 
-export default Stat;
+export default Message;

@@ -33,3 +33,16 @@
   width: 40px;
   height: 40px;
 }
+.avatar--container {
+  cursor: pointer;
+  position: relative;
+}
+.profile--dropdown {
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 100px;
+  background-color: #f5f5fc;
+  padding: 10px;
+  border-radius: 10px;
+}
