@@ -5,11 +5,11 @@ export const ScreenMode = createContext();
 
 export default function ScreenProvider({ children }) {
   const [isMobile, setIsMobile] = useState(() => {
-    return window.matchMedia("(max-width: 768px)").matches;
+    return window.matchMedia("(max-width: 700px)").matches;
   });
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+      setIsMobile(window.matchMedia("(max-width: 700px)").matches);
     };
     checkMobile();
     const resizeListener = () => {

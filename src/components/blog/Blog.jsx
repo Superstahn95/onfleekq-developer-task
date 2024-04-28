@@ -25,7 +25,7 @@ function Blog() {
         </div>
         <div className="blog--title--container">
           <p className="blog--title">
-            How to properly manage your <br /> personal budget?
+            How to properly manage your personal budget?
           </p>
         </div>
         <div className="blog--statistics">

@@ -39,9 +39,9 @@ function ChartComponent() {
     chart: {
       type: "candlestick",
       height: 350,
-    },
-    title: {
-      text: "Simple Candlestick Chart",
+      toolbar: {
+        show: false,
+      },
     },
     xaxis: {
       type: "category",

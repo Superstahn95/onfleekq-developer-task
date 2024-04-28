@@ -16,3 +16,13 @@ export const transactions = [
   { type: "shopping", time: "11:15pm", amount: "$142,00", image: bag },
   { type: "netflix", time: "Jan 10, 2020", amount: "$24,99", image: netflix },
 ];
+
+export const timeData = [
+  { name: "Sun", time: 8, number: 3 },
+  { name: "Mon", time: 10, number: 6 },
+  { name: "Tue", time: 9, number: 5 },
+  { name: "Wed", time: 13, number: 4 },
+  { name: "Thu", time: 16, number: 2 },
+  { name: "Fri", time: 15, number: 7 },
+  { name: "Sat", time: 18, number: 8 },
+];

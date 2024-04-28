@@ -1,6 +1,16 @@
 import "./timeChart.css";
 import Chart from "react-apexcharts";
+import {
+  LineChart,
+  Line,
+  XAxis,
+  Tooltip,
+  Area,
+  ResponsiveContainer,
+} from "recharts";
 import WidgetWrapper from "../widgetWrapper/WidgetWrapper";
+import { timeData } from "../../assets/data";
+import { colors } from "../../utils/colors";
 function TimeChart() {
   const series = [
     {
@@ -37,7 +47,24 @@ function TimeChart() {
   return (
     <WidgetWrapper>
       <div>TimeChart</div>
-      <Chart options={options} series={series} type="line" height={100} />
+      <ResponsiveContainer width="100%" height={200}>
+        <LineChart
+          // className="line--chart"
+          // width={400}
+          // height={200}
+          data={timeData}
+        >
+          <Line type="monotone" dataKey="time" stroke={colors.secondary} />
+          <XAxis dataKey="name" />
+          <Area
+            type="monotone"
+            dataKey="number"
+            fill="#8884d8"
+            stroke="#8884d8"
+          />
+          <Tooltip />
+        </LineChart>
+      </ResponsiveContainer>
     </WidgetWrapper>
   );
 }

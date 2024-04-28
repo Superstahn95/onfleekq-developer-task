@@ -57,3 +57,14 @@
   color: white;
   font-size: 14px;
 }
+@media screen and (max-width: 1084px) {
+  .blog--statistics {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .blog {
+    margin-bottom: 100px;
+  }
+}
