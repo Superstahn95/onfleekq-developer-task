@@ -3,6 +3,7 @@ import "./blog.css";
 import WidgetWrapper from "../widgetWrapper/WidgetWrapper";
 import { colors } from "../../utils/colors";
 import { IoChevronForwardOutline } from "react-icons/io5";
+import blogAvatar from "../../assets/blog-avatar.png";
 
 const statistics = [
   { text: "Video", icon: <FaPlayCircle color={colors.primary} size={20} /> },
@@ -14,7 +15,9 @@ function Blog() {
     <WidgetWrapper>
       <div className="blog">
         <div className="blog--author--container">
-          <div className="author--image--container">{/* avatar here */}</div>
+          <div className="author--image--container">
+            <img src={blogAvatar} alt="avatar" className="blog--avatar" />
+          </div>
           <div className="author--details">
             <p className="author--name">Lily Donovan</p>
             <p className="author--post">Business Trainer</p>

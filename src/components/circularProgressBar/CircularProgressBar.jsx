@@ -7,7 +7,7 @@ import "./circularProgressBar.css";
 function CircularProgressBar() {
   const percentage = 66;
   return (
-    <div style={{ width: 150, height: 150, marginTop: 50 }}>
+    <div style={{ width: 120, height: 120, marginTop: 30 }}>
       <CircularProgressbarWithChildren
         value={percentage}
         background={true}

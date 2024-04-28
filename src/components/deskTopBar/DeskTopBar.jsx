@@ -2,6 +2,7 @@ import { IoSearch } from "react-icons/io5";
 import { IoMdNotifications } from "react-icons/io";
 import "./deskTopBar.css";
 import { colors } from "../../utils/colors";
+import profileAvatar from "../../assets/profile-avatar.png";
 function DeskTopBar() {
   return (
     <div className="topbar">
@@ -20,11 +21,17 @@ function DeskTopBar() {
       </div>
 
       <div className="topbar--notification">
-        <IoMdNotifications
-          size={25}
-          className="notification"
-          color={colors.primaryShaded}
-        />
+        <div className="topbar--notification--container">
+          <IoMdNotifications
+            size={30}
+            className="notification"
+            color={colors.primaryShaded}
+          />
+          <div className="red--dot"></div>
+        </div>
+        <div className="avatar--container">
+          <img src={profileAvatar} alt="avatar" className="profile-avatar" />
+        </div>
       </div>
     </div>
   );

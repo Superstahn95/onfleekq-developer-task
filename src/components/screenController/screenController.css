@@ -1,0 +1,19 @@
+.controller--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controller {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px #efeef9;
+}
+.controller--button {
+  background-color: white;
+  border-radius: 5px;
+  padding-inline: 20px;
+}
+.controller--button--active {
+  background-color: #00c3f8;
+}

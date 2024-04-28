@@ -1,0 +1,35 @@
+.mobile--topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1999;
+}
+.mobile--avatar--container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topbar--notification--container {
+  position: relative;
+}
+.red--dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+  top: 0;
+  right: 0;
+}
+.logo {
+  width: 30px;
+  height: 30px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+}

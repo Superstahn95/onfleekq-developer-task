@@ -34,3 +34,24 @@
   margin-left: 25px;
   color: #000013;
 }
+.topbar--notification {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.topbar--notification--container {
+  position: relative;
+}
+.red--dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+  top: 0;
+  right: 0;
+}
+.profile-avatar {
+  width: 30px;
+  height: 30px;
+}

@@ -3,9 +3,13 @@
   display: flex;
   flex-direction: column;
 }
-.text {
+.logo--div {
   color: #ffffff;
   font-weight: bold;
+}
+.desktop--logo {
+  width: 50px;
+  height: 30px;
 }
 .navlinks--container {
   display: flex;
@@ -36,4 +40,34 @@
   transition: all 0.5s ease-in-out;
   color: #ff392b;
   box-shadow: 5px 0px #f5f5fc;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #3326ae;
+    z-index: 99;
+    border-radius: 40px;
+    padding: 5px;
+  }
+  .logo--div {
+    display: none;
+    color: red;
+  }
+  .navlinks--container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .navlinks {
+    padding: 5px;
+    margin-bottom: 0;
+  }
+  .navlinks-active {
+    padding: 5px;
+    margin-bottom: 0;
+  }
 }

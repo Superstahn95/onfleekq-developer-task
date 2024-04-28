@@ -3,6 +3,7 @@ import { IoWallet } from "react-icons/io5";
 import { FaMessage, FaHouse } from "react-icons/fa6";
 import { AiFillPieChart } from "react-icons/ai";
 import "./sidebar.css";
+import desktopLogo from "../../assets/desktop-logo.png";
 
 const navlinksArray = [
   { icon: <FaHouse size={25} />, path: "/" },
@@ -23,7 +24,9 @@ const navlinksArray = [
 function Sidebar() {
   return (
     <div className="sidebar">
-      <div className="text">Logo</div>
+      <div className="logo--div">
+        <img src={desktopLogo} alt="logo" className="desktop--logo" />
+      </div>
       <div className="navlinks--container">
         {navlinksArray.map((link) => (
           <NavLink

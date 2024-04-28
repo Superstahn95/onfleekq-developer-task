@@ -3,7 +3,13 @@ import "./transactionCard.css";
 function TransactionCard({ transaction }) {
   return (
     <div className="transaction--card">
-      <button className="transaction--button">C</button>
+      <button className="transaction--button">
+        <img
+          src={transaction.image}
+          alt="image"
+          className="transaction--image"
+        />
+      </button>
       <div className="transaction--text--container">
         <p className="transaction--text">{transaction.type}</p>
         <p className="transaction--subtext">{transaction.time}</p>
