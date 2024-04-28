@@ -20,20 +20,42 @@ function AnalyticsView() {
         />
       )}
       <div className="analytics">
-        <div
-          className={`analytics--firstsection ${
-            activeComponent === "chart" ? "active" : ""
-          }`}
-        >
-          <DetailsSummary />
-          <div style={{ marginBlock: 30 }}>
-            <ChartComponent />
+        {isMobile && (
+          <div>
+            {" "}
+            {activeComponent === "chart" ? (
+              <>
+                <div style={{ marginBlock: 30 }}>
+                  <ChartComponent />
+                </div>
+                <div className="time--blog--container">
+                  <TimeChart />
+                  <Blog />
+                </div>
+              </>
+            ) : (
+              <Payment />
+            )}{" "}
           </div>
-          <div className="time--blog--container">
-            <TimeChart />
-            <Blog />
+        )}
+        {!isMobile && (
+          <div
+            className={`analytics--firstsection ${
+              activeComponent === "chart" ? "active" : ""
+            }`}
+          >
+            <DetailsSummary />
+            <div style={{ marginBlock: 30 }}>
+              <ChartComponent />
+            </div>
+            <div className="time--blog--container">
+              <TimeChart />
+              <Blog />
+            </div>
           </div>
-        </div>
+        )}
+
+        {/* to be shown only on desktop screens */}
         {!isMobile && (
           <div
             className={`analytics--secondsection ${
